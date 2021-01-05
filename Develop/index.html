@@ -34,5 +34,155 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      var date = moment().format("dddd, MMMM Do")
+      $("#currentDay").text(date)
+
+      function makeRows(){
+      var row = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row)
+      var hour = $("<div>").text("9:00")
+        .attr({"class": "col-md-2 hour"})
+    
+      var planner = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner.append(plannerText)
+      var save = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row.append(hour, planner, save)
+      save.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row2 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row2)
+      var hour2 = $("<div>").text("10:00")
+        .attr({"class": "col-md-2 hour"})
+      row2.append(hour2)
+      var planner2 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText2 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner2.append(plannerText2)
+      var save2 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row2.append(hour2, planner2, save2)
+      save2.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row3 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row3)
+      var hour3 = $("<div>").text("11:00")
+        .attr({"class": "col-md-2 hour"})
+      row3.append(hour3)
+      var planner3 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText3 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner3.append(plannerText3)
+      var save3 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row3.append(hour3, planner3, save3)
+      save3.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row4 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row4)
+      var hour4 = $("<div>").text("12:00")
+        .attr({"class": "col-md-2 hour"})
+      row4.append(hour4)
+      var planner4 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText4 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner4.append(plannerText4)
+      var save4 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row4.append(hour4, planner4, save4)
+      save4.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row5 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row5)
+      var hour5 = $("<div>").text("1:00")
+        .attr({"class": "col-md-2 hour"})
+      row5.append(hour5)
+      var planner5 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText5 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner5.append(plannerText5)
+      var save5 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row5.append(hour5, planner5, save5)
+      save5.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row6 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row6)
+      var hour6 = $("<div>").text("2:00")
+        .attr({"class": "col-md-2 hour"})
+      row6.append(hour6)
+      var planner6 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText6 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner6.append(plannerText6)
+      var save6 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row6.append(hour6, planner6, save6)
+      save6.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row7 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row7)
+      var hour7 = $("<div>").text("3:00")
+        .attr({"class": "col-md-2 hour"})
+      row7.append(hour7)
+      var planner7 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText7 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner7.append(plannerText7)
+      var save7 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row7.append(hour7, planner7, save7)
+      save7.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row8 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row8)
+      var hour8 = $("<div>").text("4:00")
+        .attr({"class": "col-md-2 hour"})
+      row8.append(hour8)
+      var planner8 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText8 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner8.append(plannerText4)
+      var save8 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row8.append(hour8, planner8, save8)
+      save8.on("click", function(event){
+        event.preventDefault()
+      })
+
+      var row9 = $("<form>").attr({ "class": "row"
+      })
+      $(".container").append(row9)
+      var hour9 = $("<div>").text("5:00")
+        .attr({"class": "col-md-2 hour"})
+      row9.append(hour9)
+      var planner9 = $("<div>").attr({"class": "col-md-9"}) 
+      var plannerText9 = $("<textarea>").attr({"class": "col-md-12 textarea"})
+      planner9.append(plannerText9)
+      var save9 = $("<button>").attr({"class": "col-md-1 saveBtn"})
+      row9.append(hour9, planner9, save9)
+      save9.on("click", function(event){
+        event.preventDefault()
+      })
+    }
+    makeRows()
+
+
+
+
+
+
+
+
+    </script>
   </body>
 </html>
